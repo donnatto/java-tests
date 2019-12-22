@@ -2,6 +2,11 @@ package com.donnatto.javatests.util;
 
 public class StringUtil {
 
+    public static boolean isEmpty(String string) {
+
+        return string == null || string.equals("") || string.trim().length() == 0;
+    }
+
     public static String repeat(String string, int times) {
 
         if (times < 0) {
